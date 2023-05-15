@@ -1,0 +1,236 @@
+@font-face {
+  font-family: gogoia;
+  src: url("./fonts/GOGOIA-Deco.ttf");
+}
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 1rem;
+}
+body {
+  height: 100vh;
+  background-image: url(/imgs/laptopjpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.big-container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  width: 70%;
+  border-radius: 10px;
+  box-shadow: 0px 10px 13px -2px #000000, 4px 3px 9px 4px rgba(65, 64, 64, 0);
+  background-color: #1d1d1d;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+.logo {
+  width: 100%;
+  padding: 0.5rem;
+  color: aqua;
+  text-align: center;
+  background-color: #000000;
+}
+.logo a {
+  font-size: 4rem;
+  font-weight: 500;
+  color: aliceblue;
+}
+
+.header-container{
+  height: 100%;
+  width: 15%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-image: url(/imgs/raas\ copy.jpg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  animation: movimiento 30s infinite linear;
+  box-shadow: 0px 10px 13px -3px #000000, 4px 3px 9px 4px rgba(132, 132, 132, 0);
+}
+@keyframes movimiento {
+  from {
+    background-position: bottom left;
+  }
+  to {
+    background-position: top right;
+  }
+}
+
+
+
+ul {
+  width: 100%;
+}
+li {
+  margin: 0 auto;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  list-style: none;
+  filter: blur(0.1);
+  margin-bottom: 0.5rem;
+  border-top: 1px solid white;
+}
+
+a {
+  font-family: gogoia;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  padding: 1rem 0.3rem 1rem 0rem;
+}
+.ul-items li a:hover {
+  color: aqua;
+}
+
+.icon-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}
+i {
+  display: block;
+  width: 100%;
+  padding-bottom: 0.7rem;
+  color: white;
+  font-size: 2rem;
+}
+/*here starts Main*/
+
+.container-main {
+  width: 100%;
+  display: flex;
+  color: white;
+  margin-top: 8rem;
+}
+.main-left {
+  font-size: 5rem;
+  font-weight: 600;
+  font-family: "Orbitron", sans-serif;
+  margin-left: 4rem;
+
+}
+
+.img-container {
+  position: relative;
+  bottom: 10rem;
+  right: 5rem;
+  width: 300px;
+  height: 300px;
+  background-image: url(/imgs/raas\ copy.jpg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  animation: movimiento 35s infinite;
+  overflow: hidden;
+  border: 2px rgb(129, 82, 7) solid;
+  border-radius: 100%;
+}
+
+img {
+  object-fit: cover;
+  display: inline-block;
+}
+
+h1 {
+  font-size: 5rem;
+}
+.m {
+  color: aqua;
+  display: inline;
+  padding: 0;
+}
+
+h2 {
+  font-size: 5rem;
+  
+}
+
+button {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-family: gogoia;
+  background-color: #1d1d1d;
+  padding: 1rem 3.3rem 1rem 3.3rem;
+  border: 1px solid aqua;
+  color: aqua;
+}
+button:hover {
+  background-color: rgb(156, 104, 6);
+}
+
+@media screen and (max-width: 1059px) {
+  body {
+    height: 100%;
+    width: 100%;
+   
+  }
+  h1, h2, span{ font-size: 4rem;}
+  .big-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  
+  }
+  .flex-nav {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2rem;
+  
+  }
+
+  .flex-nav li {
+    width: 100%;
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+    font-size: 3rem;
+  }
+  .flex-nav li a {
+    width: 100%;
+    font-size: 3rem;
+  }
+
+  .icon-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .container-main {
+    height: 100%;
+    width: 100%;
+  }
+
+  .main-left {
+    width: 100%;
+ 
+  }
+  .main-right{width: 100%;}
+
+  .img-container {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    top: 4rem;
+    right:-1rem;
+  }
+  img{ object-fit: cover;
+    width: 250px;
+    height: 250px;}
+}
+
+@media screen and (max-width: 626px){
+  .main-right{display: none;}
+}
+
